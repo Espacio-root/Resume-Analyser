@@ -6,6 +6,7 @@ The Resume Analyzer tool allows users to upload their resumes and job descriptio
 ***Usage***
 1. Download [`resume.pdf`](https://github.com/Espacio-root/Resume-Analyser/blob/master/resume.pdf) from this repository.
 2. Copy the following text and paste it under "Job Description"
+```
     Childcare Program Coordinator
 
     Job Summary:
@@ -36,6 +37,7 @@ The Resume Analyzer tool allows users to upload their resumes and job descriptio
 
     Work Environment:
     This role requires the ability to work in both office and classroom settings and may involve occasional evening or weekend hours for special events or family meetings.
+```
 3. Click on "Analyze Resume"
 4. Optionally, download the optimized resume as pdf.
 
