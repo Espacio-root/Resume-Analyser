@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Analyzer</title>
+    <script src="https://cdn.jsdelivr.net/npm/pdfjs-dist@2.7.570/build/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/15.0.5/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.2.3/purify.min.js"></script>
+
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Resume Analyzer</h1>
+            <p>
+                Upload your resume and job description to get personalized feedback
+            </p>
+        </header>
+
+        <div class="upload-section">
+            <div class="drop-zone" id="dropZone">
+                <p>Drag & drop your resume here or click to upload</p>
+                <input type="file" id="fileInput" hidden accept=".pdf,.doc,.docx" />
+            </div>
+
+            <div class="job-description">
+                <h2>Job Description</h2>
+                <textarea id="jobDescription" placeholder="Paste the job description here..."></textarea>
+            </div>
+
+            <button id="analyzeBtn">Analyze Resume</button>
+        </div>
+
+        <div class="loading" id="loading">
+            <div class="loading-spinner"></div>
+            <p>Analyzing your resume...</p>
+        </div>
+
+        <div class="results-section" id="results">
+            <h2>Analysis Results</h2>
+
+            <div class="score-card">
+                <div class="score-item">
+                    <h3>Match Score</h3>
+                    <p id="matchScore">0%</p>
+                </div>
+                <div class="score-item">
+                    <h3>Keywords Found</h3>
+                    <p id="keywordsFound">0/0</p>
+                </div>
+                <div class="score-item">
+                    <h3>Missing Skills</h3>
+                    <p id="missingSkills">0</p>
+                </div>
+            </div>
+
+            <div class="improvements">
+                <h3>Suggested Improvements</h3>
+                <div id="improvementsList"></div>
+            </div>
+
+            <div class="download-section">
+                <button id="downloadBtn">Download Optimized Resume (PDF)</button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
