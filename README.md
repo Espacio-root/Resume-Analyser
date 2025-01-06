@@ -1,9 +1,9 @@
-*Resume Analyzer Documentation*
+# Resume Analyzer Documentation
 
-***Overview***
+### Overview
 The Resume Analyzer tool allows users to upload their resumes and job descriptions to receive personalized feedback on how well the resume matches the job description. It calculates a "match score," identifies keywords found in the resume, lists missing skills, and suggests improvements. Additionally, the user can download an optimized resume as a PDF.
 
-***Usage***
+### Usage
 1. Download [`resume.pdf`](https://github.com/Espacio-root/Resume-Analyser/blob/master/resume.pdf) from this repository.
 2. Copy the following text and paste it under "Job Description"
 ```
@@ -41,7 +41,7 @@ The Resume Analyzer tool allows users to upload their resumes and job descriptio
 3. Click on "Analyze Resume"
 4. Optionally, download the optimized resume as pdf.
 
-***How it works?***
+### How it works?
 1. Uploading Resume:
 
     The user uploads a resume (PDF, DOC, DOCX format) by either dragging and dropping the file or selecting it from the file input. The content of the resume is extracted and stored.
